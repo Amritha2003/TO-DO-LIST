@@ -1,0 +1,140 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form h1 {
+  margin-bottom: 1.5rem;
+  color: #213547;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.submit-error {
+  background-color: #ffebee;
+  color: #ff4444;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.form-group input.error {
+  border-color: #ff4444;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  text-align: left;
+}
+
+.password-requirements {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.password-requirements ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+
+.password-requirements li {
+  margin: 0.25rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.password-requirements li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #ff4444;
+}
+
+.password-requirements li.valid::before {
+  content: '✓';
+  color: #4caf50;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.submit-button:not(:disabled):hover {
+  background-color: #535bf2;
+}
+
+.toggle-mode-button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #646cff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.toggle-mode-button:hover {
+  color: #535bf2;
+}
